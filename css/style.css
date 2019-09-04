@@ -1,22 +1,42 @@
 aside{
+    font-family: 'Permanent Marker', cursive;
     grid-area: aside;
+    background-color: rgb(31, 4, 4);
+}
+aside p{
+    font-family: 'Montserrat', sans-serif;
+}
+aside h2{
+    text-align: center;
+}
+aside h2, aside p{
+    color: rgb(165, 153, 136);
+    padding: 0 15px;
+}
+aside ul{
+    list-style-image:  url("../image/nuvem.png");
+}
+aside ul li{
+    color: rgb(165, 153, 136);
 }
 body{
     display: grid;
+    cursor: url("../image/kunai.png"), default;
     grid-template-areas: 'navbar navbar navbar navbar'
                          'header header header aside'
                          'section section section aside'
                          'footer footer footer footer';
-grid-template-columns: 25vw 25vw 25vw 25vw;
-grid-template-rows: 8vh 25vh 30vh 10vh;
+grid-template-columns: 25vw 25vw 25vw 23vw;
+grid-template-rows: 8vh 40vh 84vh 10vh;
 margin: 0;
 }
-
 footer{
     grid-area: footer;
 }
 
 header{
+    background-image: url("../image/akatsuki.jpg");
+    background-size: cover;
     grid-area: header;
 }
 
@@ -33,8 +53,28 @@ nav a{
     text-decoration-line: none;
 }
 nav > img{
+    width: 70px;
+}
+section{
+    grid-area: section;
+}
+nav > img{
     width: 45px;
 }
 section{
     grid-area: section;
+}
+section div{
+    display: flex;
+    justify-content: center;
+}
+section h2{
+    margin: 0;
+    text-align: center;
+}
+section input:focus{
+    background-color: bisque;
+}
+section input::placeholder{
+    color: #bb2127;
 }
