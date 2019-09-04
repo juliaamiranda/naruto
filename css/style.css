@@ -21,9 +21,20 @@ header{
 }
 
 nav{
+    align-items: center;
+    background-color: rgb(20, 7, 7);
+    display: flex;
+    justify-content: space-around;
     grid-area: navbar;
+    font-family: 'Permanent Marker', cursive;
 }
-
+nav a{
+    color: rgb(243, 237, 237);
+    text-decoration-line: none;
+}
+nav > img{
+    width: 45px;
+}
 section{
     grid-area: section;
 }
